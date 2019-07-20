@@ -40,6 +40,9 @@ public class GameManager : MonoBehaviour
     private AudioSource audioSource;
     public string music = "1";
 
+    //자동판정모드
+    public bool autoPerfect;
+
     //음악을 실행하는 함수
     void MusicStart(){
         AudioClip audioClip = Resources.Load<AudioClip>("Beats/" + music);
