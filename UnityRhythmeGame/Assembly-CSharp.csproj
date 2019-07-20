@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\NoteBehavior.cs" />
      <Compile Include="Assets\Scripts\NoteController.cs" />
+     <Compile Include="Assets\Scripts\ObjectPooler.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Unity_RhythmGame/RhythmGame/UnityRhythmeGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
