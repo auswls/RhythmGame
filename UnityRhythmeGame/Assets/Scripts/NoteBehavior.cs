@@ -35,6 +35,15 @@ public class NoteBehavior : MonoBehaviour
             if(judge != GameManager.judges.NONE) gameObject.SetActive(false);
         }
     }
+
+    public void Judge()
+    {
+        //해당 노트에 대한 판정 진행
+        GameManager.instance.processJudge(judge, noteType);
+        //노트가 판정선에 닿기 시작한 이후로는 해당 노트를 제거(비활성화)
+        if (judge != GameManager.judges.NONE) gameObject.SetActive(false);
+    }
+
     private void OnTriggerEnter2D(Collider2D other){
         if(other.gameObject.tag == "Bad Line"){
             judge = GameManager.judges.BAD;

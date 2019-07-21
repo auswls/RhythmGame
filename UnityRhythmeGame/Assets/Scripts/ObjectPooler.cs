@@ -26,6 +26,17 @@ public class ObjectPooler : MonoBehaviour
         }
     }
 
+    public void Judge(int noteType)
+    {
+        foreach(GameObject obj in poolsOfNotes[noteType - 1])
+        {
+            if(!obj.activeInHierarchy)
+            {
+                obj.GetComponent<NoteBehavior>().Judge();
+            }
+        }
+    }
+
     public GameObject getObject(int noteType){
         foreach(GameObject obj in poolsOfNotes[noteType-1]){
             if(!obj.activeInHierarchy){ //object가 전부 활성화 되지 않았을 때
