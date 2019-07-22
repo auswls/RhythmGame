@@ -81,6 +81,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if(Input.touchCount > 0)
         {
             for(int i = 0; i < Input.touchCount; i++)
@@ -117,7 +118,8 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-
+        
+        
         /*
         if(Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) ||
             Input.GetMouseButtonDown(2) || Input.GetMouseButtonDown(3))
