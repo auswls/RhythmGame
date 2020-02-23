@@ -10,6 +10,8 @@ Unity로 개발한 Rhythm Game
 -정확도와 콤보에 대해 가중치를 적용해 점수를 환산하고 특정한 점수 기준을 설정해서 그 점수 기준에 도달하면 별이 나타나도록 함
 
 
+# 화면 캡쳐
+
 로그인 화면
 ![로그인 화면](https://user-images.githubusercontent.com/41981548/75106234-874ae080-565d-11ea-8013-4d2cd0eb297b.JPG)
 
